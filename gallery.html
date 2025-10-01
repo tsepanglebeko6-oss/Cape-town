@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cape Town in Pictures</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <h1 class="main-heading">Cape Town in Pictures</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Filter Buttons -->
+  <section class="filter-buttons">
+    <button onclick="filterGallery('all')">Show All</button>
+    <button onclick="filterGallery('beaches')">Show Beaches</button>
+    <button onclick="filterGallery('mountains')">Show Mountains</button>
+    <button onclick="filterGallery('city')">Show City</button>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="gallery-grid">
+
+    <!-- Image 1 -->
+    <div class="gallery-item beaches">
+      <img src="c:\Users\USER\Desktop\New folder (2)\7-best-beaches-to-visit-in-cape-town-2-mfrh-original-scaled-1.jpg" alt="Camps Bay Beach" onclick="openLightbox(this)" />
+      <p class="caption">Camps Bay Beach</p>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="gallery-item mountains">
+      <img src="c:\Users\USER\Desktop\New folder (2)\d9bab13280700500c8b5f6134a0c3aec.jpg" alt="Table Mountain" onclick="openLightbox(this)" />
+      <p class="caption">Iconic Table Mountain</p>
+    </div>
+
+    <!-- Image 3 -->
+    <div class="gallery-item city">
+      <img src="c:\Users\USER\Desktop\New folder (2)\cape+town+city.webp" alt="Bo-Kaap Neighborhood" onclick="openLightbox(this)" />
+      <p class="caption">Colorful Bo-Kaap</p>
+    </div>
+
+    <!-- Image 4 -->
+    <div class="gallery-item beaches">
+      <img src="c:\Users\USER\Desktop\New folder (2)\image.jpg" alt="Boulders Beach Penguins" onclick="openLightbox(this)" />
+      <p class="caption">Boulders Beach Penguins</p>
+    </div>
+
+    <!-- Image 5 -->
+    <div class="gallery-item mountains">
+      <img src="c:\Users\USER\Desktop\New folder (2)\05_TableMountain101__DoINeedAGuide_shutterstock_506610490.jpg" alt="Chapman's Peak Drive" onclick="openLightbox(this)" />
+      <p class="caption">Chapman's Peak Drive</p>
+    </div>
+
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Explore Cape Town |Designed by Ts'epang E.Lebeko</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Cape Town</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header with Navigation -->
+  <header>
+    <h1 class="main-heading">Welcome to Cape Town</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Dynamic Welcome Message -->
+  <section class="welcome-message" id="welcomeMessage"></section>
+
+  <!-- Hero Image with Overlay -->
+  <section class="hero">
+    <img src="c:\Users\USER\Desktop\New folder (2)\0-Where-to-Stay-in-Cape-Town-Africa-660x440@2x.jpg" alt="Cape Town View" class="hero-img" />
+    <div class="caption-overlay">Explore the beauty of Cape Town</div>
+  </section>
+
+  <!-- Introduction Section -->
+  <main class="intro">
+    <p>
+      Cape Town, the Mother City of South Africa, is a vibrant blend of cultures, landscapes, and history.
+      Nestled between the iconic Table Mountain and the Atlantic Ocean, this destination offers breathtaking views at every turn.
+      Whether you're exploring the colorful streets of Bo-Kaap or relaxing on the beaches of Camps Bay, there's something magical about Cape Town.
+      <q class="pull-quote">“Cape Town is a place where every sunset feels like the first.”</q>
+      The city’s unique fusion of modernity and tradition makes it a must-visit for travelers worldwide.
+      From its bustling waterfront to the serene vineyards of Stellenbosch nearby, the options are endless.
+      Tourists flock here for more than just the scenery – it’s the spirit of Cape Town that leaves a lasting impression.
+      With friendly locals, delicious cuisine, and a rich cultural heritage, Cape Town will capture your heart.
+      Come see why this South African gem is consistently voted among the world’s top travel destinations.
+    </p>
+  </main>
+
+  <!-- JavaScript Buttons -->
+  <div class="button-section">
+    <button id="colorBtn">Change Background Color</button>
+  </div>
+
+  <!-- Image Slideshow -->
+  <section class="slideshow">
+    <img id="slideImage" src="c:\Users\USER\Desktop\New folder (2)\vxb6a6kge3h61.jpg" alt="Cape Town Slideshow" />
+    <div class="slideshow-buttons">
+      <button onclick="prevSlide()">Prev</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Explore Cape Town |Designed by Ts'epang E.Lebeko</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
